@@ -1,0 +1,124 @@
+:root{
+    --red : crimson;
+    --green : #47A992;
+    --yellow :#FFB84C;
+    --white : whitesmoke;
+}
+
+body,h2{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+.landing{
+    background-image: url('../media/pexels-karolina-grabowska-4033324\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    color:var(--white);
+
+}
+header a{
+    text-decoration: none;
+    color: rgb(130, 130, 238);
+
+}
+
+header{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+#logo{
+    flex:3;
+    font-size:1.25em;
+}
+nav{
+    flex:2;
+    display:flex;
+    align-items: center;
+}
+nav a{
+    flex:1;
+}
+nav a:hover{
+    color:var(--green);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding:2em;
+}
+
+.tagline1{
+    color: darkblue;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: black;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color:rgb(204, 255, 0);
+    color: black;
+    border: 1px solid var(--green);
+}
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    background:linear-gradient(to right,rgb(100,100,100),rgb(14, 13, 13));
+    color:var(--white);
+
+}
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(100,100,100),rgb(53, 52, 52));
+    font-size: 3.5em;
+    color:var(--green);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color:var(--red);
+    font-size: 2.8em;
+}
+table{
+    width:100%;
+    padding:2em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.locations{
+    background:linear-gradient(to right,rgb(100,100,100),rgb(53, 52, 52));
+    color:var(--white);
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.locations h2
+{
+    color:var(--red);
+    margin-bottom: .8em;
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
